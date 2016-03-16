@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
+# 此题可以不转成数字，直接从链表中取值逐位运算
 
 # Definition for singly-linked list.
 class ListNode(object):
