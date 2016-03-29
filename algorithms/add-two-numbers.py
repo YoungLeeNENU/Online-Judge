@@ -15,14 +15,14 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        l1, l2 = self.linkToList(l1), self.linkToList(l2)
-        nil = ''
-        rl1, rl2 = map(str, l1[::--1]), map(str, l2[::--1])
-        n1, n2 = nil.join(rl1), nil.join(rl2)
+        nil      = ''
+        res      = []
+        l1,  l2  = self.linkToList(l1),  self.linkToList(l2)
+        rl1, rl2 = map(str, l1[::--1]),  map(str, l2[::--1])
+        n1,  n2  = nil.join(rl1),        nil.join(rl2)
         calced = str((int(n1[::-1])) + (int(n2[::-1])))[::-1]
-        res = []
-        for x in calced:
-           res.append(int(x)) 
+        for x in calced: 
+            res.append(int(x))
         return self.listToLink(res)
     def listToLink(self, list_instance):
         linkSeq = []
