@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #!/usr/bin/python
 # The isBadVersion API is already defined for you.
 # @param version, an integer
