@@ -31,7 +31,7 @@ var intersection = function(nums1, nums2) {
         var to_be_shifted2 = nums2[0];
         if (to_be_shifted1 === to_be_shifted2) {
             if (res.indexOf(to_be_shifted1) == -1) {
-                res.push(to_be_shifted1);
+	            res.push(to_be_shifted1);
             }
             nums1.shift();
             nums2.shift();
@@ -44,5 +44,4 @@ var intersection = function(nums1, nums2) {
     return res;
 };
 
-intersection([0,5,8,7,2,9,7,5],
-             [1,4,8,9]);
+console.log(intersection([1, 2, 2, 1], [2, 2]));
