@@ -23,15 +23,14 @@ var union = function(nums1, nums2) {
 };
 
 var intersection = function(nums1, nums2) {
-	var res = [],
-	    size = nums1.length > nums2.length ? nums1.length : nums2.length;
+	var res = [];
 	nums1.sort(function(x, y) {return x - y;});
 	nums2.sort(function(x, y) {return x - y;});
     while( true ) {
 		var to_be_shifted1 = nums1[0];
 		var to_be_shifted2 = nums2[0];
 		if (to_be_shifted1 !== undefined && to_be_shifted2 !== undefined) {
-			if (to_be_shifted1 == to_be_shifted2) {
+			if (to_be_shifted1 === to_be_shifted2) {
 				if (res.indexOf(to_be_shifted1) == -1) {
 					res.push(to_be_shifted1);
 				}
@@ -46,7 +45,6 @@ var intersection = function(nums1, nums2) {
 			break;
 		}
     }
-	console.log(res);
 	return res;
 };
 
