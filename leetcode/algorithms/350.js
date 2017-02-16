@@ -8,9 +8,7 @@ var intersect = function(nums1, nums2) {
         var to_be_shifted1 = nums1[0];
         var to_be_shifted2 = nums2[0];
         if (to_be_shifted1 === to_be_shifted2) {
-            // if (res.indexOf(to_be_shifted1) == -1) {
 	        res.push(to_be_shifted1);
-            // }
             nums1.shift();
             nums2.shift();
         } else if (to_be_shifted1 < to_be_shifted2) {
